@@ -28,6 +28,8 @@ import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
+import LandingPage from "views/LandingPage/LandingPage.js";
+
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -37,7 +39,9 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+
+
+      {/* <Header
         brand="Material Kit React"
         rightLinks={<HeaderLinks />}
         fixed
@@ -47,8 +51,10 @@ export default function Components(props) {
           color: "white"
         }}
         {...rest}
-      />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      /> */}
+      
+ <LandingPage />
+      {/* <Parallax image={require("assets/img/bg4.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
@@ -61,10 +67,10 @@ export default function Components(props) {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-
+      </Parallax> */}
+     
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
+        {/* <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />
@@ -72,9 +78,9 @@ export default function Components(props) {
         <SectionTypography />
         <SectionJavascript />
         <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
+        <SectionCompletedExamples /> */}
+        
+        {/* <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
               View Login Page
@@ -82,9 +88,9 @@ export default function Components(props) {
           </Link>
         </GridItem>
         <SectionExamples />
-        <SectionDownload />
+        <SectionDownload /> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

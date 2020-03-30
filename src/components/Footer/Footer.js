@@ -27,62 +27,62 @@ export default function Footer(props) {
     [classes.footerWhiteFont]: whiteFont
   });
   return (
-    <footer className={footerClasses}>
-      <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List>
+    <section id="footer">
+    <div className="container">
+      <div className="row text-center text-xs-center text-sm-left text-md-left">
+        <div className="col-xs-12 col-sm-4 col-md-4">
+          <h5>About US</h5>
+          <ul className="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Why it Works</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Why Us</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Terms and Conditions</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Privacy Policy</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />FAQ</a></li>
+          </ul>
         </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+        <div className="col-xs-12 col-sm-4 col-md-4">
+          <h5>MAKE MONEY WITH US</h5>
+          <ul className="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Become an Affiliate</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Partner with Us</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Careers</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Pricing</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Payment Methods</a></li>
+          </ul>
         </div>
+        <div className="col-xs-12 col-sm-4 col-md-4">
+          <h5>CUSTOMER CARE</h5>
+          <ul className="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Help Center</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />How to Order</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Corporate & Bulk Purchasing</a></li>
+            <li><a href="javascript:void();"><i className="fa fa-angle-double-right" />Returns & Refunds</a></li>
+            <li><a href=""><i className="fa fa-angle-double-right" />Order Protection</a></li>
+          </ul>
+        </div>
+      
       </div>
-    </footer>
+
+      
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul className="list-unstyled list-inline social text-center">
+            <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-facebook" /></a></li>
+            <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-twitter" /></a></li>
+            <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-instagram" /></a></li>
+            <li className="list-inline-item"><a href="javascript:void();"><i className="fa fa-google-plus" /></a></li>
+            <li className="list-inline-item"><a href="javascript:void();" target="_blank"><i className="fa fa-envelope" /></a></li>
+          </ul>
+        </div>
+      </div>	
+      <div className="row">
+        <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="">Mastertailor.pk</a></u>  Partners near you.</p>
+          <p className="h6">© All right Reversed.<a className="text-green ml-2" href="" target="_blank"></a></p>
+        </div>
+      </div>	
+    </div>
+  </section>
   );
 }
 
