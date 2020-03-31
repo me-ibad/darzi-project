@@ -4,7 +4,7 @@ import { createBrowserHistory } from "history";
 import { Router, Route, Switch } from "react-router-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.8.0";
-import "assets/css/style1.css";
+import "assets/css/style.css";
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // pages for this product
