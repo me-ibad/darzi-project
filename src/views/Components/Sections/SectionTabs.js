@@ -30,14 +30,14 @@ export default function SectionTabs() {
       <div >
         <div id="nav-tabs">
           <h3>Navigation Tabs</h3>
-          <br></br>
-          <br></br>
+          
           <GridContainer>
            
             <GridItem xs={12} sm={12} md={12}>
-              <h1>
+              <h1 className={classes.textCenter}>
                 <small>Admin Registration</small>
               </h1>
+              <br/>
               <CustomTabs
                 plainTabs
                 headerColor="info"
@@ -93,6 +93,45 @@ export default function SectionTabs() {
               />
   
             </GridItem>
+
+
+            <GridItem xs={6} sm={2} md={2} lg={1.5}>
+            <h3 className="gander">
+                <small>Gender</small>
+              </h3>
+    </GridItem>
+
+
+
+            <GridItem xs={6} sm={2} md={2} lg={2}>
+            <div class="funkyradio">
+            <div class="funkyradio-primary">
+            <input type="radio" name="radio" id="radio1" checked/>
+            <label for="radio1">Male</label>
+        </div>
+        </div>
+</GridItem>
+        <GridItem xs={6} sm={2} md={2} lg={2}>
+        <div class="funkyradio">
+            <div class="funkyradio-primary">
+            <input type="radio" name="radio" id="radio2" />
+            <label for="radio2">Female</label>
+        </div>
+        </div>
+    </GridItem>
+
+    <GridItem xs={6} sm={2} md={2} lg={2}>
+        <div class="funkyradio">
+            <div class="funkyradio-primary">
+            <input type="radio" name="radio" id="radio3" />
+            <label for="radio3">Others</label>
+        </div>
+        </div>
+    </GridItem>
+
+
+
+
             </GridContainer>
             <GridContainer className="inputs"> 
                       <GridItem xs={12} sm={4} md={4} lg={3}>
@@ -266,8 +305,9 @@ export default function SectionTabs() {
               />
   
             </GridItem>
+            
             </GridContainer>
-
+            <br/><br/>
             <GridContainer className="inputs"> 
                       <GridItem xs={12} sm={4} md={4} lg={3}>
              
